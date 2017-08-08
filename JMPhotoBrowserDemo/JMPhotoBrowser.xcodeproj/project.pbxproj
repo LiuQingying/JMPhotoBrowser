@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		384888811F396268004405A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 384888801F396268004405A4 /* main.m */; };
+		384888841F396268004405A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 384888831F396268004405A4 /* AppDelegate.m */; };
+		384888871F396268004405A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384888861F396268004405A4 /* ViewController.m */; };
+		3848888A1F396268004405A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384888881F396268004405A4 /* Main.storyboard */; };
+		3848888C1F396268004405A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3848888B1F396268004405A4 /* Assets.xcassets */; };
+		3848888F1F396268004405A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3848888D1F396268004405A4 /* LaunchScreen.storyboard */; };
+		3848889A1F396268004405A4 /* JMPhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 384888991F396268004405A4 /* JMPhotoBrowserTests.m */; };
+		384888A51F396268004405A4 /* JMPhotoBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 384888A41F396268004405A4 /* JMPhotoBrowserUITests.m */; };
+		384888B41F3962B6004405A4 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 384888B31F3962B6004405A4 /* UIView+Extension.m */; };
+		384888D71F396492004405A4 /* JMAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384888CE1F396492004405A4 /* JMAlertController.m */; };
+		384888D81F396492004405A4 /* JMShowBigPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 384888D01F396492004405A4 /* JMShowBigPictureCell.m */; };
+		384888D91F396492004405A4 /* JMShowBigPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 384888D21F396492004405A4 /* JMShowBigPictureView.m */; };
+		38A2063E1F396E6300ADEBC9 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A2063D1F396E6300ADEBC9 /* Photos.framework */; };
+		38A206401F396E9B00ADEBC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A2063F1F396E9B00ADEBC9 /* UIKit.framework */; };
+		38A206421F39861A00ADEBC9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A206411F39861A00ADEBC9 /* AVFoundation.framework */; };
+		38A206441F3987EE00ADEBC9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A206431F3987EE00ADEBC9 /* AssetsLibrary.framework */; };
+		38A206481F3989B400ADEBC9 /* JMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A206461F3989B400ADEBC9 /* JMTableViewController.m */; };
+		38A2064D1F398D3A00ADEBC9 /* JMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A2064B1F398D3A00ADEBC9 /* JMTableViewCell.m */; };
+		38A2064E1F398D3A00ADEBC9 /* JMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A2064C1F398D3A00ADEBC9 /* JMTableViewCell.xib */; };
+		DBE95B9AD75193004D1486AB /* libPods-JMPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A01478938D1B43EF7C26A0 /* libPods-JMPhotoBrowser.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		384888961F396268004405A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 384888741F396268004405A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3848887B1F396268004405A4;
+			remoteInfo = JMPhotoBrowser;
+		};
+		384888A11F396268004405A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 384888741F396268004405A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3848887B1F396268004405A4;
+			remoteInfo = JMPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049191BD6F3E0AA4E735BAA6 /* Pods-JMPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JMPhotoBrowser/Pods-JMPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		3454AAB2BBE52AF4CDFDA11D /* Pods-JMPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMPhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-JMPhotoBrowser/Pods-JMPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		3848887C1F396268004405A4 /* JMPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		384888801F396268004405A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		384888821F396268004405A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		384888831F396268004405A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		384888851F396268004405A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		384888861F396268004405A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		384888891F396268004405A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3848888B1F396268004405A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3848888E1F396268004405A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		384888901F396268004405A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384888951F396268004405A4 /* JMPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		384888991F396268004405A4 /* JMPhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMPhotoBrowserTests.m; sourceTree = "<group>"; };
+		3848889B1F396268004405A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384888A01F396268004405A4 /* JMPhotoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMPhotoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		384888A41F396268004405A4 /* JMPhotoBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMPhotoBrowserUITests.m; sourceTree = "<group>"; };
+		384888A61F396268004405A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384888B21F3962B6004405A4 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "../UIView+Extension.h"; sourceTree = "<group>"; };
+		384888B31F3962B6004405A4 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "../UIView+Extension.m"; sourceTree = "<group>"; };
+		384888CD1F396492004405A4 /* JMAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMAlertController.h; sourceTree = "<group>"; };
+		384888CE1F396492004405A4 /* JMAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMAlertController.m; sourceTree = "<group>"; };
+		384888CF1F396492004405A4 /* JMShowBigPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMShowBigPictureCell.h; sourceTree = "<group>"; };
+		384888D01F396492004405A4 /* JMShowBigPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMShowBigPictureCell.m; sourceTree = "<group>"; };
+		384888D11F396492004405A4 /* JMShowBigPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMShowBigPictureView.h; sourceTree = "<group>"; };
+		384888D21F396492004405A4 /* JMShowBigPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMShowBigPictureView.m; sourceTree = "<group>"; };
+		384888DA1F39695B004405A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		38A2063D1F396E6300ADEBC9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		38A2063F1F396E9B00ADEBC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		38A206411F39861A00ADEBC9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		38A206431F3987EE00ADEBC9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		38A206451F3989B400ADEBC9 /* JMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTableViewController.h; sourceTree = "<group>"; };
+		38A206461F3989B400ADEBC9 /* JMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTableViewController.m; sourceTree = "<group>"; };
+		38A2064A1F398D3A00ADEBC9 /* JMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTableViewCell.h; sourceTree = "<group>"; };
+		38A2064B1F398D3A00ADEBC9 /* JMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTableViewCell.m; sourceTree = "<group>"; };
+		38A2064C1F398D3A00ADEBC9 /* JMTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTableViewCell.xib; sourceTree = "<group>"; };
+		A8A01478938D1B43EF7C26A0 /* libPods-JMPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JMPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		384888791F396268004405A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A206441F3987EE00ADEBC9 /* AssetsLibrary.framework in Frameworks */,
+				38A206421F39861A00ADEBC9 /* AVFoundation.framework in Frameworks */,
+				38A206401F396E9B00ADEBC9 /* UIKit.framework in Frameworks */,
+				38A2063E1F396E6300ADEBC9 /* Photos.framework in Frameworks */,
+				DBE95B9AD75193004D1486AB /* libPods-JMPhotoBrowser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384888921F396268004405A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3848889D1F396268004405A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F7915F6ECE7FD2C40A21D1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				049191BD6F3E0AA4E735BAA6 /* Pods-JMPhotoBrowser.debug.xcconfig */,
+				3454AAB2BBE52AF4CDFDA11D /* Pods-JMPhotoBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		384888731F396268004405A4 = {
+			isa = PBXGroup;
+			children = (
+				3848887E1F396268004405A4 /* JMPhotoBrowser */,
+				384888981F396268004405A4 /* JMPhotoBrowserTests */,
+				384888A31F396268004405A4 /* JMPhotoBrowserUITests */,
+				3848887D1F396268004405A4 /* Products */,
+				0F7915F6ECE7FD2C40A21D1C /* Pods */,
+				69FC3B7B4F71682F7D68297C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3848887D1F396268004405A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3848887C1F396268004405A4 /* JMPhotoBrowser.app */,
+				384888951F396268004405A4 /* JMPhotoBrowserTests.xctest */,
+				384888A01F396268004405A4 /* JMPhotoBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3848887E1F396268004405A4 /* JMPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				384888821F396268004405A4 /* AppDelegate.h */,
+				384888831F396268004405A4 /* AppDelegate.m */,
+				384888851F396268004405A4 /* ViewController.h */,
+				384888861F396268004405A4 /* ViewController.m */,
+				38A206451F3989B400ADEBC9 /* JMTableViewController.h */,
+				38A206461F3989B400ADEBC9 /* JMTableViewController.m */,
+				38A2064A1F398D3A00ADEBC9 /* JMTableViewCell.h */,
+				38A2064B1F398D3A00ADEBC9 /* JMTableViewCell.m */,
+				38A2064C1F398D3A00ADEBC9 /* JMTableViewCell.xib */,
+				384888C11F396492004405A4 /* JMPhotoBrowser */,
+				384888881F396268004405A4 /* Main.storyboard */,
+				3848888B1F396268004405A4 /* Assets.xcassets */,
+				3848888D1F396268004405A4 /* LaunchScreen.storyboard */,
+				384888901F396268004405A4 /* Info.plist */,
+				3848887F1F396268004405A4 /* Supporting Files */,
+			);
+			path = JMPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		3848887F1F396268004405A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				384888801F396268004405A4 /* main.m */,
+				384888DA1F39695B004405A4 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		384888981F396268004405A4 /* JMPhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				384888991F396268004405A4 /* JMPhotoBrowserTests.m */,
+				3848889B1F396268004405A4 /* Info.plist */,
+			);
+			path = JMPhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		384888A31F396268004405A4 /* JMPhotoBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				384888A41F396268004405A4 /* JMPhotoBrowserUITests.m */,
+				384888A61F396268004405A4 /* Info.plist */,
+			);
+			path = JMPhotoBrowserUITests;
+			sourceTree = "<group>";
+		};
+		384888C11F396492004405A4 /* JMPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				384888B21F3962B6004405A4 /* UIView+Extension.h */,
+				384888B31F3962B6004405A4 /* UIView+Extension.m */,
+				384888CD1F396492004405A4 /* JMAlertController.h */,
+				384888CE1F396492004405A4 /* JMAlertController.m */,
+				384888CF1F396492004405A4 /* JMShowBigPictureCell.h */,
+				384888D01F396492004405A4 /* JMShowBigPictureCell.m */,
+				384888D11F396492004405A4 /* JMShowBigPictureView.h */,
+				384888D21F396492004405A4 /* JMShowBigPictureView.m */,
+			);
+			path = JMPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		69FC3B7B4F71682F7D68297C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38A206431F3987EE00ADEBC9 /* AssetsLibrary.framework */,
+				38A206411F39861A00ADEBC9 /* AVFoundation.framework */,
+				38A2063F1F396E9B00ADEBC9 /* UIKit.framework */,
+				38A2063D1F396E6300ADEBC9 /* Photos.framework */,
+				A8A01478938D1B43EF7C26A0 /* libPods-JMPhotoBrowser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3848887B1F396268004405A4 /* JMPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384888A91F396268004405A4 /* Build configuration list for PBXNativeTarget "JMPhotoBrowser" */;
+			buildPhases = (
+				4ED75045D53B2C2350603256 /* [CP] Check Pods Manifest.lock */,
+				384888781F396268004405A4 /* Sources */,
+				384888791F396268004405A4 /* Frameworks */,
+				3848887A1F396268004405A4 /* Resources */,
+				CA34DD0B5133EB8FC317E28F /* [CP] Embed Pods Frameworks */,
+				60E8FF515A6CD3EBFD897962 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMPhotoBrowser;
+			productName = JMPhotoBrowser;
+			productReference = 3848887C1F396268004405A4 /* JMPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		384888941F396268004405A4 /* JMPhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384888AC1F396268004405A4 /* Build configuration list for PBXNativeTarget "JMPhotoBrowserTests" */;
+			buildPhases = (
+				384888911F396268004405A4 /* Sources */,
+				384888921F396268004405A4 /* Frameworks */,
+				384888931F396268004405A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384888971F396268004405A4 /* PBXTargetDependency */,
+			);
+			name = JMPhotoBrowserTests;
+			productName = JMPhotoBrowserTests;
+			productReference = 384888951F396268004405A4 /* JMPhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3848889F1F396268004405A4 /* JMPhotoBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384888AF1F396268004405A4 /* Build configuration list for PBXNativeTarget "JMPhotoBrowserUITests" */;
+			buildPhases = (
+				3848889C1F396268004405A4 /* Sources */,
+				3848889D1F396268004405A4 /* Frameworks */,
+				3848889E1F396268004405A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384888A21F396268004405A4 /* PBXTargetDependency */,
+			);
+			name = JMPhotoBrowserUITests;
+			productName = JMPhotoBrowserUITests;
+			productReference = 384888A01F396268004405A4 /* JMPhotoBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		384888741F396268004405A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = LiuQingying;
+				TargetAttributes = {
+					3848887B1F396268004405A4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CUVJ2D6N73;
+						ProvisioningStyle = Automatic;
+					};
+					384888941F396268004405A4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3848887B1F396268004405A4;
+					};
+					3848889F1F396268004405A4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3848887B1F396268004405A4;
+					};
+				};
+			};
+			buildConfigurationList = 384888771F396268004405A4 /* Build configuration list for PBXProject "JMPhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 384888731F396268004405A4;
+			productRefGroup = 3848887D1F396268004405A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3848887B1F396268004405A4 /* JMPhotoBrowser */,
+				384888941F396268004405A4 /* JMPhotoBrowserTests */,
+				3848889F1F396268004405A4 /* JMPhotoBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3848887A1F396268004405A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3848888F1F396268004405A4 /* LaunchScreen.storyboard in Resources */,
+				3848888C1F396268004405A4 /* Assets.xcassets in Resources */,
+				38A2064E1F398D3A00ADEBC9 /* JMTableViewCell.xib in Resources */,
+				3848888A1F396268004405A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384888931F396268004405A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3848889E1F396268004405A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ED75045D53B2C2350603256 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JMPhotoBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60E8FF515A6CD3EBFD897962 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JMPhotoBrowser/Pods-JMPhotoBrowser-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JMPhotoBrowser/Pods-JMPhotoBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA34DD0B5133EB8FC317E28F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JMPhotoBrowser/Pods-JMPhotoBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		384888781F396268004405A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A206481F3989B400ADEBC9 /* JMTableViewController.m in Sources */,
+				384888871F396268004405A4 /* ViewController.m in Sources */,
+				384888D91F396492004405A4 /* JMShowBigPictureView.m in Sources */,
+				384888841F396268004405A4 /* AppDelegate.m in Sources */,
+				384888B41F3962B6004405A4 /* UIView+Extension.m in Sources */,
+				384888811F396268004405A4 /* main.m in Sources */,
+				38A2064D1F398D3A00ADEBC9 /* JMTableViewCell.m in Sources */,
+				384888D71F396492004405A4 /* JMAlertController.m in Sources */,
+				384888D81F396492004405A4 /* JMShowBigPictureCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384888911F396268004405A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3848889A1F396268004405A4 /* JMPhotoBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3848889C1F396268004405A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384888A51F396268004405A4 /* JMPhotoBrowserUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		384888971F396268004405A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3848887B1F396268004405A4 /* JMPhotoBrowser */;
+			targetProxy = 384888961F396268004405A4 /* PBXContainerItemProxy */;
+		};
+		384888A21F396268004405A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3848887B1F396268004405A4 /* JMPhotoBrowser */;
+			targetProxy = 384888A11F396268004405A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		384888881F396268004405A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384888891F396268004405A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3848888D1F396268004405A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3848888E1F396268004405A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		384888A71F396268004405A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		384888A81F396268004405A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		384888AA1F396268004405A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049191BD6F3E0AA4E735BAA6 /* Pods-JMPhotoBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CUVJ2D6N73;
+				INFOPLIST_FILE = JMPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liuqingying;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		384888AB1F396268004405A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3454AAB2BBE52AF4CDFDA11D /* Pods-JMPhotoBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CUVJ2D6N73;
+				INFOPLIST_FILE = JMPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liuqingying;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		384888AD1F396268004405A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JMPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JM.JMPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMPhotoBrowser.app/JMPhotoBrowser";
+			};
+			name = Debug;
+		};
+		384888AE1F396268004405A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JMPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JM.JMPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMPhotoBrowser.app/JMPhotoBrowser";
+			};
+			name = Release;
+		};
+		384888B01F396268004405A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JMPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JM.JMPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JMPhotoBrowser;
+			};
+			name = Debug;
+		};
+		384888B11F396268004405A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JMPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JM.JMPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JMPhotoBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		384888771F396268004405A4 /* Build configuration list for PBXProject "JMPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384888A71F396268004405A4 /* Debug */,
+				384888A81F396268004405A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384888A91F396268004405A4 /* Build configuration list for PBXNativeTarget "JMPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384888AA1F396268004405A4 /* Debug */,
+				384888AB1F396268004405A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384888AC1F396268004405A4 /* Build configuration list for PBXNativeTarget "JMPhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384888AD1F396268004405A4 /* Debug */,
+				384888AE1F396268004405A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384888AF1F396268004405A4 /* Build configuration list for PBXNativeTarget "JMPhotoBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384888B01F396268004405A4 /* Debug */,
+				384888B11F396268004405A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 384888741F396268004405A4 /* Project object */;
+}

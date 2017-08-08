@@ -1,0 +1,9 @@
+platform :ios, “8.0”
+
+target ’JMPhotoBrowser’ do
+
+pod ’FLAnimatedImage’
+pod 'SDWebImage'
+pod ‘DACircularProgress’
+pod 'SVProgressHUD'
+end
