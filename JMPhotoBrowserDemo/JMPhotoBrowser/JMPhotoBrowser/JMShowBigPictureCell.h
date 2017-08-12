@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FLAnimatedImageView.h"
-@class JMBigPictureView,DACircularProgressView,FLAnimatedImageView;
+@class JMBigPictureView,FLAnimatedImageView;
 
 @interface JMShowBigPictureCell : UICollectionViewCell
 @property (nonatomic, copy) void (^singleTapGestureBlock)(CGRect rect);
@@ -21,7 +21,10 @@
 @property (nonatomic, strong) FLAnimatedImageView *imageView;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIView *imageContainerView;
-@property (nonatomic, strong) DACircularProgressView *progressView;
+/**
+ 转圈加载提示
+ */
+@property (nonatomic, strong) UIImageView *indicateImageView;
 @property (nonatomic, copy) void (^singleTapGestureBlock)(CGRect rect);
 /**
  点击图片的位置

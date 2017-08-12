@@ -7,7 +7,6 @@
 //
 
 #import "JMShowBigPictureCell.h"
-#import "DACircularProgressView.h"
 #import "UIView+Extension.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImageDownloader.h>
@@ -92,20 +91,32 @@
     return self;
 }
 - (void)configProgressView {
-    self.progressView = [[DACircularProgressView alloc] init];
-    self.progressView.roundedCorners = YES;
-    self.progressView.thicknessRatio = 0.2;
-    self.progressView.trackTintColor = [UIColor clearColor];
-    self.progressView.progressTintColor = [UIColor whiteColor];
-    _progressView.hidden = YES;
-    static CGFloat progressWH = 40;
+    self.indicateImageView = [[UIImageView alloc] init];
+    _indicateImageView.image = [UIImage imageNamed:@"loadBigPictureIndicate"];
+    _indicateImageView.hidden = YES;
+    static CGFloat progressWH = 30;
     CGFloat progressX = (self.yy_width - progressWH) / 2;
     CGFloat progressY = (self.yy_height - progressWH) / 2;
-    _progressView.frame = CGRectMake(progressX, progressY, progressWH, progressWH);
-    [self addSubview:_progressView];
-    [self bringSubviewToFront:_progressView];
+    _indicateImageView.frame = CGRectMake(progressX, progressY, progressWH, progressWH);
+    [self addSubview:_indicateImageView];
+    
 }
-
+- (void)startAnimate{
+    _indicateImageView.hidden = NO;
+    CABasicAnimation *animation =  [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    animation.fromValue = [NSNumber numberWithFloat:0.f];
+    animation.toValue =  [NSNumber numberWithFloat: M_PI *2];
+    animation.duration  = 1;
+    animation.autoreverses = NO;
+    animation.fillMode =kCAFillModeForwards;
+    animation.repeatCount = MAXFLOAT;
+    [self.indicateImageView.layer addAnimation:animation forKey:nil];
+    
+}
+- (void)stopAnimate{
+    self.indicateImageView.hidden = YES;
+    [self.indicateImageView.layer removeAllAnimations];
+}
 - (void)resizeSubviewsAnimate:(BOOL)animate {
     
     _imageContainerView.frame = self.currentRect;
@@ -113,9 +124,9 @@
     UIImage *image = _imageView.image;
     NSLog(@"----imageSize----%@",NSStringFromCGSize(image.size));
     if (image.size.height / image.size.width > self.yy_height / self.scrollView.yy_width) {
-
-        if(animate){
         
+        if(animate){
+            
             [UIView animateWithDuration:kanimateDurationInSeconds animations:^{
                 
                 _imageContainerView.yy_height = floor(image.size.height / (image.size.width / self.scrollView.yy_width));
@@ -142,21 +153,21 @@
                 _imageContainerView.yy_width = self.scrollView.yy_width;
                 _imageContainerView.yy_centerY = MAX(_imageContainerView.yy_height, self.yy_height) *0.5;;
             } completion:nil];
-    
+            
         }else{
             _imageContainerView.yy_height = height;
             _imageContainerView.yy_x = 0;
             _imageContainerView.yy_width = self.scrollView.yy_width;
             _imageContainerView.yy_centerY = MAX(_imageContainerView.yy_height, self.yy_height) *0.5;
         }
-    
+        
     }
     if (_imageContainerView.yy_height > self.yy_height && _imageContainerView.yy_height - self.yy_height <= 1) {
         if (animate) {
             [UIView animateWithDuration:kanimateDurationInSeconds animations:^{
                 _imageContainerView.yy_height = self.yy_height;
             } completion:nil];
-        
+            
         }else{
             _imageContainerView.yy_height = self.yy_height;
         }
@@ -173,7 +184,7 @@
         } completion:nil];
     }else{
         _imageView.frame = _imageContainerView.bounds;
-    
+        
     }
     
 }
@@ -225,7 +236,7 @@
                         [SVProgressHUD showErrorWithStatus:@"保存失败"];
                     }
                 }];
-
+                
             }else{
                 ALAssetsLibrary *lib = [[ALAssetsLibrary alloc] init];
                 NSData *imageData = [self imageDataFromDiskCacheWithKey:_currenPictureUrl];
@@ -244,7 +255,7 @@
         [alertController addAction:determineAction];
         [alertController addAction:cancelAction];
         [alertController showAnimated:YES];
-
+        
     }
 }
 
@@ -296,16 +307,15 @@
         }
     } else {
         _imageView.image = placeholder;
+        _indicateImageView.hidden = NO;
+        [self startAnimate];
         [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:newURL options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
-            _progressView.hidden = NO;
-            double progress = receivedSize / (double)expectedSize;
-            NSLog(@"进度：%f",progress);
-            NSLog(@"-----%@",[NSThread currentThread]);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                _progressView.progress = MAX(MIN(1, progress), 0);
-            });
+            
         } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
-            if (finished) {
+            
+            [self stopAnimate];
+            if (image) {
+                
                 SDImageFormat imageFormat = [NSData sd_imageFormatForImageData:data];
                 if (imageFormat == SDImageFormatGIF) {
                     _imageView.animatedImage = [FLAnimatedImage animatedImageWithGIFData:data];
@@ -315,7 +325,7 @@
                 
                 [[[SDWebImageManager sharedManager] imageCache] storeImage:image imageData:data forKey:newURL.absoluteString toDisk:YES completion:^{
                 }];
-                _progressView.hidden = YES;
+                _indicateImageView.hidden = YES;
                 [self resizeSubviewsAnimate:NO];
             }
         }];
