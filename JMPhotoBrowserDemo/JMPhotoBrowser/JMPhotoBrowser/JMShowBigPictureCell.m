@@ -75,7 +75,7 @@
         [_scrollView addSubview:_imageContainerView];
         
         _imageView = [[FLAnimatedImageView alloc] init];
-        _imageView.contentMode = UIViewContentModeScaleAspectFill;
+        _imageView.contentMode = UIViewContentModeScaleAspectFit;
         _imageView.clipsToBounds = YES;
         [_imageContainerView addSubview:_imageView];
         
