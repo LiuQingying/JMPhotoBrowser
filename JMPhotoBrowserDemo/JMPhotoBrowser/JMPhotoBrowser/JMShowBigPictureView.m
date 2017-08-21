@@ -82,24 +82,31 @@ static NSString *const showBigPictureCellID = @"showBigPictureCellID";
         cell.bigPictureView.imageView.image = self.iconArray[indexPath.row];
     }
     __weak __typeof(cell)weakCell = cell;
+    __weak __typeof(self)weakSelf = self;
     cell.singleTapGestureBlock = ^(CGRect rect){
-        [self.indexWindow resignKeyWindow];
-        [self.window makeKeyAndVisible];
-        self.indexWindow.hidden = YES;
-        self.needAnimate = YES;
-        self.indexWindow = nil;
+        
+        [weakSelf.indexWindow resignKeyWindow];
+        [weakSelf.window makeKeyAndVisible];
+        weakSelf.indexWindow.hidden = YES;
+        weakSelf.needAnimate = YES;
+        weakSelf.indexWindow = nil;
+        
         [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
-        self.backgroundColor = [UIColor clearColor];
+        weakSelf.backgroundColor = [UIColor clearColor];
         weakCell.backgroundColor = [UIColor clearColor];
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        __strong typeof(weakCell) strongCell = weakCell;
+        
         [UIView animateWithDuration:0.25 animations:^{
-            _indexLabel.hidden = YES;
             
-            weakCell.bigPictureView.imageContainerView.frame = self.currentRect;
-            weakCell.bigPictureView.imageView.yy_width = self.currentRect.size.width;
-            weakCell.bigPictureView.imageView.yy_height = self.currentRect.size.height;
+            strongCell.bigPictureView.imageContainerView.frame = strongSelf.currentRect;
+            strongCell.bigPictureView.imageView.yy_width = strongSelf.currentRect.size.width;
+            strongCell.bigPictureView.imageView.yy_height = strongSelf.currentRect.size.height;
             
         } completion:^(BOOL finished) {
-            [self removeFromSuperview];
+            
+            [strongSelf removeFromSuperview];
+            
         }];
     };
     return cell;
